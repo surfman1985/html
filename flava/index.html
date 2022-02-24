@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/destyle.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <title>Flava - Webcase - surfman</title>
+</head>
+<body class="page">
+    <div class="page__bg js-play"><img class="page__bg-img" src="img/main.jpg" alt="">
+        </div>
+    <header class="page__header header container">
+            <a class="header__logo"><img class="header__logo-img" src="img/flava.png" alt="Flava"></a>    
+            <nav class="nav">
+                <div class="nav__btn js-burger">
+                    <span class="bar bar--top"></span>
+                    <span class="bar bar--mid"></span>
+                    <span class="bar bar--bot"></span>
+                </div>
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link nav__link--is-activ" title="HOME">HOME</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" title="LINE UP">LINE UP</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" title="TICKET">TICKET</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" title="SCHEDULE">SCHEDULE</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" title="BE PART OF">BE PART OF</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link" title="ABOUT">ABOUT</a></li>
+                </ul> 
+            </nav>
+            <a href="#" class="header__btn">CREATE ACCOUNT</a>     
+    </header>
+    <main class="container">
+        <section class="intro">
+            <h1 class="intro__title">All about music - its all here</h1>                
+            <p class="intro__subtitle">Turn on the feeling with all music event </p>
+            <div class="intro__play js-play"></div>
+        </section>
+        <section class="timer">
+            <h2 class="h2-title">MUSIC FESTIVAL START IN</h2>
+            <ul class="timer__list" id="timer">
+                <li class="timer__item">00<span class="timer__sub-item">days</span></li>
+                <li class="timer__item">00<span class="timer__sub-item">hours</span></li>
+                <li class="timer__item">00<span class="timer__sub-item">minutes</span></li>
+                <li class="timer__item">00<span class="timer__sub-item">secons</span></li>
+            </ul>
+            <a href="#" class="timer__btn" title="buy ticket">buy ticket</a>
+
+        </section>
+        <section class="headliner">
+            <h2 class="h2-title">THE LINEUP OF FLAFA</h2>
+            <div class="headliner_body js-headliner">
+                    <div class="slide">
+                        <img class="slide__img" src="img/photo1.jpg" alt="RAYUL">
+                        <p class="slide__name">RAYUL</p>
+                    </div>                
+                <div class="slide">
+                    <img class="slide__img" src="img/photo2.jpg" alt="ATIKH BANA">
+                    <p class="slide__name">ATIKH BANA</p>
+                    
+                </div>
+                <div class="slide">
+                    <img class="slide__img" src="img/photo3.jpg" alt="RAFAELLA">
+                    <p class="slide__name">RAFAELLA</p>
+                    
+                </div>
+                <div class="slide">
+                    <img class="slide__img" src="img/photo1.jpg" alt="RAYUL">
+                    <p class="slide__name">RAYUL</p>         
+                </div>
+            </div>     
+
+        </section>
+        <section class="sponsor">
+            <h2 class="h2-title">SPONSORS</h2>
+            <div class="sponsor__body js-sponsor">
+                <a href="#" class="sponsop__pic"><img src="img/banner1.jpg" alt=""> </a>
+                <a href="#" class="sponsop__pic"><img src="img/banner2.png" alt=""> </a>
+                <a href="#" class="sponsop__pic"><img src="img/banner3.png" alt=""> </a>
+                <a href="#" class="sponsop__pic"><img src="img/banner4.png" alt=""> </a>
+                <a href="#" class="sponsop__pic"><img src="img/banner5.png" alt=""> </a>
+                <a href="#" class="sponsop__pic"><img src="img/banner6.png" alt=""> </a>
+                <a href="#" class="sponsop__pic"><img src="img/banner3.png" alt=""> </a>
+            </div>
+        </section>
+        <section class="registration">
+            <h2 class="h2-title">FIRST COME, FIRST SERVED</h2>
+            <p class="registration__subtitle">1,000 people who leave a request will receive a gift from FLAVA</p>
+
+            <form data-action="https://httpbin.org/post" data-method='POST' class='registration__form js-form-ajax'>
+                 <input name="hidden-info" type='hidden' value='test value'>
+                 <div class='form'>
+                    <input class='form__elem' name='name' id='name' type='text' data-rule="required|name" placeholder="Your name">
+                </div>
+                <div class='form'>
+                    <input class='form__elem' name='email' type='email' data-rule="required|email" placeholder="Your Email">
+                </div>
+                <div class='form'>
+                    <input class='form__elem' name='phone' type="tel" data-rule="required" placeholder="Your phone">
+                </div>
+                <div class='form registration__submit'>
+                    <textarea class='form__elem' name='note' id="" cols="30" rows="12"  placeholder="Your message"></textarea>
+                    <button class="form__submit" type='submit'>Send</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer class="container contact">
+        <div class="contact__block">
+            <div class="contact__title">Phone
+                <p class="contact__desc">+62 812 2345 678</p>
+            </div>
+            <div class="contact__title">Email
+                <p class="contact__desc">Flavamusicfest@mail.com</p>
+            </div>
+        </div>
+        <div class="contact__subscribe">
+            <form data-action="https://httpbin.org/post" data-method='POST' class='contact__form form js-form-ajax'>
+                <p class="contact__title">Keep In Touch</p>
+                <input class='form__elem form__elem-subscribe' name='email' type='email' data-rule="required|email" placeholder="Your Email">
+                <button class="form__submit" type='submit'>Subscribe</button>
+            </form>
+            <div class="contact__social">
+                <a href="#" class="contact__social-link" title="instagram"><img src="img/inst.png" alt="instagram"></a>
+                <a href="#" class="contact__social-link" title="yotube"><img src="img/yotube.png" alt="yotube"></a>
+                <a href="#" class="contact__social-link" title="tiktok"><img src="img/tiktok.png" alt="tiktok"></a>
+            </div>
+        </div>
+
+    </footer>
+    <footer class="footer">
+        <div class="container footer__body"> 
+            <p class="footer__terms">Terms & Conditions for Event • Privacy Policy • Terms of Use</p>
+            <p class="footer__copyright">Copyright © 2021 • Flava - Music Festival</p> 
+        </div>   
+    </footer>
+    <div class="container"><div class="up js-up">UP</div></div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/validator2.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+
+
+
